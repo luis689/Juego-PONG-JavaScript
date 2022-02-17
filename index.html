@@ -1,0 +1,38 @@
+<!--
+Universidad Nacional de Colombia
+Grafica Interactiva
+Ejercicio 2 
+Luis Antonio Zuluaga Ramirez
+22/06/2020
+-->
+
+<!-----------------------------------------Archivo principal para ejecutar el juego-------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <script src="src/phaser.js"></script>                <!-- Se importa la libreria de Phaser 3 de primera-->
+    <script src="src/init.js" type="module"></script>    <!-- Se llama al archivo principal, este archivo cnotiene los escenarios-->
+
+                                                         <!-- Se crea un estilo para que la pantalla quede centrada.-->
+    <style>                                              
+        main{                                            
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #contenedor {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>  
+        <div id="contenedor"></div>                      <!-- Contenedor del Juego-->
+    </main>
+</body>
+</html>
